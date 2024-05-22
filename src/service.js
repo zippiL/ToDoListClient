@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://localhost:5179"
+axios.defaults.baseURL = process.env.REACT_APP_API
 
 // Interceptor to log errors in responses
 axios.interceptors.response.use(
